@@ -4,207 +4,272 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
+  <div id="money_modal" class="money_modal">
+    <div class="money-modal_content">
+      <p class="money-modal_text">text</p>
+      <input class="money-modal_input" placeholder="Input text" type="text">
+      <button class="money-modal_btn">btn</button>
+    </div>
+  </div>
+  <div id="text_modal" class="text_modal">
+    <div class="text-modal_content">
+      <h3 class="text-modal_title">TEXT</h3>
+      <p class="text-modal_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur magni error amet praesentium aliquam nesciunt, molestias ullam repellendus harum optio officia fuga eos illum asperiores inventore iure quidem cupiditate impedit!</p>
+      <button class="text-modal_btn">btn</button>
+    </div>
+  </div>
+  <div class="header">
+    <div class="left-buttons">
+      <button class="deposit_btn">Deposit
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+        </svg>
+      </button>
+      <button class="withdraw_btn">Withdraw
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="right-buttons">
+      <button class="right_btn">button</button>
+      <button class="right_btn">button</button>
+    </div>
+  </div>
   <div id="container">
-    <div class="wheel">
-      <div class="outerRim"></div>
-      <div id="sect1" class="sect"><span class="single">0</span>
-        <div class="block"></div>
+    <div class="spin">
+      <div class="wheel">
+        <div class="outerRim"></div>
+        <div id="sect1" class="sect"><span class="single">0</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect2" class="sect"><span class="double">32</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect3" class="sect"><span class="double">15</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect4" class="sect"><span class="double">19</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect5" class="sect"><span class="single">4</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect6" class="sect"><span class="double">21</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect7" class="sect"><span class="single">2</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect8" class="sect"><span class="double">25</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect9" class="sect"><span class="double">17</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect10" class="sect"><span class="double">34</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect11" class="sect"><span class="single">6</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect12" class="sect"><span class="double">27</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect13" class="sect"><span class="double">13</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect14" class="sect"><span class="double">36</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect15" class="sect"><span class="double">11</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect16" class="sect"><span class="double">30</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect17" class="sect"><span class="single">8</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect18" class="sect"><span class="double">23</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect19" class="sect"><span class="double">10</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect20" class="sect"><span class="single">5</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect21" class="sect"><span class="double">24</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect22" class="sect"><span class="double">16</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect23" class="sect"><span class="double">33</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect24" class="sect"><span class="single">1</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect25" class="sect"><span class="double">20</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect26" class="sect"><span class="double">14</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect27" class="sect"><span class="double">31</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect28" class="sect"><span class="single">9</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect29" class="sect"><span class="double">22</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect30" class="sect"><span class="double">18</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect31" class="sect"><span class="double">29</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect32" class="sect"><span class="single">7</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect33" class="sect"><span class="double">28</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect34" class="sect"><span class="double">12</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect35" class="sect"><span class="double">35</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect36" class="sect"><span class="single">3</span>
+          <div class="block"></div>
+        </div>
+        <div id="sect37" class="sect"><span class="double">26</span>
+          <div class="block"></div>
+        </div>
+        <div class="pocketsRim"></div>
+        <div class="ballTrack">
+          <div class="ball"></div>
+        </div>
+        <div class="pockets"></div>
+        <div class="cone"></div>
+        <div class="turret"></div>
+        <div class="turretHandle">
+          <div class="thendOne"></div>
+          <div class="thendTwo"></div>
+        </div>
       </div>
-      <div id="sect2" class="sect"><span class="double">32</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect3" class="sect"><span class="double">15</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect4" class="sect"><span class="double">19</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect5" class="sect"><span class="single">4</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect6" class="sect"><span class="double">21</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect7" class="sect"><span class="single">2</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect8" class="sect"><span class="double">25</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect9" class="sect"><span class="double">17</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect10" class="sect"><span class="double">34</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect11" class="sect"><span class="single">6</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect12" class="sect"><span class="double">27</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect13" class="sect"><span class="double">13</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect14" class="sect"><span class="double">36</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect15" class="sect"><span class="double">11</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect16" class="sect"><span class="double">30</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect17" class="sect"><span class="single">8</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect18" class="sect"><span class="double">23</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect19" class="sect"><span class="double">10</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect20" class="sect"><span class="single">5</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect21" class="sect"><span class="double">24</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect22" class="sect"><span class="double">16</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect23" class="sect"><span class="double">33</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect24" class="sect"><span class="single">1</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect25" class="sect"><span class="double">20</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect26" class="sect"><span class="double">14</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect27" class="sect"><span class="double">31</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect28" class="sect"><span class="single">9</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect29" class="sect"><span class="double">22</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect30" class="sect"><span class="double">18</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect31" class="sect"><span class="double">29</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect32" class="sect"><span class="single">7</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect33" class="sect"><span class="double">28</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect34" class="sect"><span class="double">12</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect35" class="sect"><span class="double">35</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect36" class="sect"><span class="single">3</span>
-        <div class="block"></div>
-      </div>
-      <div id="sect37" class="sect"><span class="double">26</span>
-        <div class="block"></div>
-      </div>
-      <div class="pocketsRim"></div>
-      <div class="ballTrack">
-        <div class="ball"></div>
-      </div>
-      <div class="pockets"></div>
-      <div class="cone"></div>
-      <div class="turret"></div>
-      <div class="turretHandle">
-        <div class="thendOne"></div>
-        <div class="thendTwo"></div>
+      <div class="spin-btn_wrapper">
+        <button class="spin_btn">SPIN</button>
       </div>
     </div>
-    <div class="betting-board_wrapper">
-      <table cellspacing="0" cellpadding="0" class="betting-board">
-        <tr class="betting-board_row-1">
-          <td class="table-hidden"></td>
-          <td id="cell_1-to-18" class="betting-board_line" colspan="6"><p>1 to 18</p></td>
-          <td id="cell_19-to-36" class="betting-board_line" colspan="6"><p>19 to 36</p></td>
-          <td class="table-hidden"></td>
-        </tr>
-        <tr class="betting-board_row-2">
-          <td id="cell_0" class="betting-board_line-nums" rowspan="3"><p class="vertical">0</p></td>
-          <td id="cell_3" class="betting-board_line-nums"><p class="vertical">3</p></td>
-          <td id="cell_6" class="betting-board_line-nums"><p class="vertical">6</p></td>
-          <td id="cell_9" class="betting-board_line-nums"><p class="vertical">9</p></td>
-          <td id="cell_12" class="betting-board_line-nums"><p class="vertical">12</p></td>
-          <td id="cell_15" class="betting-board_line-nums"><p class="vertical">15</p></td>
-          <td id="cell_18" class="betting-board_line-nums"><p class="vertical">18</p></td>
-          <td id="cell_21" class="betting-board_line-nums"><p class="vertical">21</p></td>
-          <td id="cell_24" class="betting-board_line-nums"><p class="vertical">24</p></td>
-          <td id="cell_27" class="betting-board_line-nums"><p class="vertical">27</p></td>
-          <td id="cell_30" class="betting-board_line-nums"><p class="vertical">30</p></td>
-          <td id="cell_33" class="betting-board_line-nums"><p class="vertical">33</p></td>
-          <td id="cell_36" class="betting-board_line-nums"><p class="vertical">36</p></td>
-          <td id="bet-line_2-to-1-1" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
-        </tr>
-        <tr class="betting-board_row-3">
-          <td id="cell_2" class="betting-board_line-nums"><p class="vertical">2</p></td>
-          <td id="cell_5" class="betting-board_line-nums"><p class="vertical">5</p></td>
-          <td id="cell_8" class="betting-board_line-nums"><p class="vertical">8</p></td>
-          <td id="cell_11" class="betting-board_line-nums"><p class="vertical">11</p></td>
-          <td id="cell_14" class="betting-board_line-nums"><p class="vertical">14</p></td>
-          <td id="cell_17" class="betting-board_line-nums"><p class="vertical">17</p></td>
-          <td id="cell_20" class="betting-board_line-nums"><p class="vertical">20</p></td>
-          <td id="cell_23" class="betting-board_line-nums"><p class="vertical">23</p></td>
-          <td id="cell_26" class="betting-board_line-nums"><p class="vertical">26</p></td>
-          <td id="cell_29" class="betting-board_line-nums"><p class="vertical">29</p></td>
-          <td id="cell_32" class="betting-board_line-nums"><p class="vertical">32</p></td>
-          <td id="cell_35" class="betting-board_line-nums"><p class="vertical">35</p></td>
-          <td id="bet-line_2-to-1-2" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
-        </tr>
-        <tr class="betting-board_row-4">
-          <td id="cell_1" class="betting-board_line-nums"><p class="vertical">1</p></td>
-          <td id="cell_4" class="betting-board_line-nums"><p class="vertical">4</p></td>
-          <td id="cell_7" class="betting-board_line-nums"><p class="vertical">7</p></td>
-          <td id="cell_10" class="betting-board_line-nums"><p class="vertical">10</p></td>
-          <td id="cell_13" class="betting-board_line-nums"><p class="vertical">13</p></td>
-          <td id="cell_16" class="betting-board_line-nums"><p class="vertical">16</p></td>
-          <td id="cell_19" class="betting-board_line-nums"><p class="vertical">19</p></td>
-          <td id="cell_22" class="betting-board_line-nums"><p class="vertical">22</p></td>
-          <td id="cell_25" class="betting-board_line-nums"><p class="vertical">25</p></td>
-          <td id="cell_28" class="betting-board_line-nums"><p class="vertical">28</p></td>
-          <td id="cell_31" class="betting-board_line-nums"><p class="vertical">31</p></td>
-          <td id="cell_34" class="betting-board_line-nums"><p class="vertical">34</p></td>
-          <td id="bet-line_2-to-1-3" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
-        </tr>
-        <tr class="betting-board_row-5">
-          <td class="betting-board_line-1 table-hidden"></td>
-          <td id="cell_1-to-12" class="betting-board_line" colspan="4"><p>1 to 12</p></td>
-          <td id="cell_13-to-24" class="betting-board_line" colspan="4"><p>13 to 24</p></td>
-          <td id="cell_25-to-36" class="betting-board_line" colspan="4"><p>25 to 36</p></td>
-          <td class="betting-board_line-14 table-hidden"></td>
-        </tr>
-        <tr class="betting-board_row-6">
-          <td class="betting-board_line-1 table-hidden"></td>
-          <td id="cell_even" class="betting-board_line" colspan="3"><p>EVEN</p></td>
-          <td id="cell_red" class="betting-board_line" colspan="3"><p>RED</p></td>
-          <td id="cell_black" class="betting-board_line" colspan="3"><p>BLACK</p></td>
-          <td id="cell_odd" class="betting-board_line" colspan="3"><p>ODD</p></td>
-          <td class="betting-board_line-14 table-hidden"></td>
-        </tr>
-      </table>
+
+    <div class="table">
+      <div class="win">
+        <p class="win_text"></p>
+      </div>
+      <div class="betting-board_wrapper">
+        <table cellspacing="0" cellpadding="0" class="betting-board">
+          <tr class="betting-board_row-1">
+            <td class="table-hidden"></td>
+            <td id="cell_1-to-18" class="betting-board_line" colspan="6"><p>1 to 18</p></td>
+            <td id="cell_19-to-36" class="betting-board_line" colspan="6"><p>19 to 36</p></td>
+            <td class="table-hidden"></td>
+          </tr>
+          <tr class="betting-board_row-2">
+            <td id="cell_0" class="betting-board_line-nums" rowspan="3"><p class="vertical">0</p></td>
+            <td id="cell_3" class="betting-board_line-nums"><p class="vertical">3</p></td>
+            <td id="cell_6" class="betting-board_line-nums"><p class="vertical">6</p></td>
+            <td id="cell_9" class="betting-board_line-nums"><p class="vertical">9</p></td>
+            <td id="cell_12" class="betting-board_line-nums"><p class="vertical">12</p></td>
+            <td id="cell_15" class="betting-board_line-nums"><p class="vertical">15</p></td>
+            <td id="cell_18" class="betting-board_line-nums"><p class="vertical">18</p></td>
+            <td id="cell_21" class="betting-board_line-nums"><p class="vertical">21</p></td>
+            <td id="cell_24" class="betting-board_line-nums"><p class="vertical">24</p></td>
+            <td id="cell_27" class="betting-board_line-nums"><p class="vertical">27</p></td>
+            <td id="cell_30" class="betting-board_line-nums"><p class="vertical">30</p></td>
+            <td id="cell_33" class="betting-board_line-nums"><p class="vertical">33</p></td>
+            <td id="cell_36" class="betting-board_line-nums"><p class="vertical">36</p></td>
+            <td id="bet-line_2-to-1-1" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
+          </tr>
+          <tr class="betting-board_row-3">
+            <td id="cell_2" class="betting-board_line-nums"><p class="vertical">2</p></td>
+            <td id="cell_5" class="betting-board_line-nums"><p class="vertical">5</p></td>
+            <td id="cell_8" class="betting-board_line-nums"><p class="vertical">8</p></td>
+            <td id="cell_11" class="betting-board_line-nums"><p class="vertical">11</p></td>
+            <td id="cell_14" class="betting-board_line-nums"><p class="vertical">14</p></td>
+            <td id="cell_17" class="betting-board_line-nums"><p class="vertical">17</p></td>
+            <td id="cell_20" class="betting-board_line-nums"><p class="vertical">20</p></td>
+            <td id="cell_23" class="betting-board_line-nums"><p class="vertical">23</p></td>
+            <td id="cell_26" class="betting-board_line-nums"><p class="vertical">26</p></td>
+            <td id="cell_29" class="betting-board_line-nums"><p class="vertical">29</p></td>
+            <td id="cell_32" class="betting-board_line-nums"><p class="vertical">32</p></td>
+            <td id="cell_35" class="betting-board_line-nums"><p class="vertical">35</p></td>
+            <td id="bet-line_2-to-1-2" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
+          </tr>
+          <tr class="betting-board_row-4">
+            <td id="cell_1" class="betting-board_line-nums"><p class="vertical">1</p></td>
+            <td id="cell_4" class="betting-board_line-nums"><p class="vertical">4</p></td>
+            <td id="cell_7" class="betting-board_line-nums"><p class="vertical">7</p></td>
+            <td id="cell_10" class="betting-board_line-nums"><p class="vertical">10</p></td>
+            <td id="cell_13" class="betting-board_line-nums"><p class="vertical">13</p></td>
+            <td id="cell_16" class="betting-board_line-nums"><p class="vertical">16</p></td>
+            <td id="cell_19" class="betting-board_line-nums"><p class="vertical">19</p></td>
+            <td id="cell_22" class="betting-board_line-nums"><p class="vertical">22</p></td>
+            <td id="cell_25" class="betting-board_line-nums"><p class="vertical">25</p></td>
+            <td id="cell_28" class="betting-board_line-nums"><p class="vertical">28</p></td>
+            <td id="cell_31" class="betting-board_line-nums"><p class="vertical">31</p></td>
+            <td id="cell_34" class="betting-board_line-nums"><p class="vertical">34</p></td>
+            <td id="bet-line_2-to-1-3" class="betting-board_line-row"><p class="vertical">2 to 1</p></td>
+          </tr>
+          <tr class="betting-board_row-5">
+            <td class="betting-board_line-1 table-hidden"></td>
+            <td id="cell_1-to-12" class="betting-board_line" colspan="4"><p>1 to 12</p></td>
+            <td id="cell_13-to-24" class="betting-board_line" colspan="4"><p>13 to 24</p></td>
+            <td id="cell_25-to-36" class="betting-board_line" colspan="4"><p>25 to 36</p></td>
+            <td class="betting-board_line-14 table-hidden"></td>
+          </tr>
+          <tr class="betting-board_row-6">
+            <td class="betting-board_line-1 table-hidden"></td>
+            <td id="cell_even" class="betting-board_line" colspan="3"><p>EVEN</p></td>
+            <td id="cell_red" class="betting-board_line" colspan="3"><p>RED</p></td>
+            <td id="cell_black" class="betting-board_line" colspan="3"><p>BLACK</p></td>
+            <td id="cell_odd" class="betting-board_line" colspan="3"><p>ODD</p></td>
+            <td class="betting-board_line-14 table-hidden"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="clear-btn_wrapper">
+        <button class="clear_btn">CLEAR</button>
+      </div>
     </div>
+    <div class="text">
+      <h3 class="text_title"></h3>
+      <div class="text-wrapper">
+        
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="icons">
+      <a href="#" class="icon_link"><img src="img/discord_icon.png" alt="Discord icon"></a>
+      <a href="#" class="icon_link"><img src="img/twitter_icon.png" alt="Twitter icon"></a>
+      <p class="icon_text">text...</p>
+    </div>
+    <div class="footer-button">
+      <button class="footer_btn">button</button>
+      <h3 class="text_title"></h3>
+      <h3 class="text_title"></h3>
+    </div>
+  </div>
 </body>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 </html>

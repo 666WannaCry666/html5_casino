@@ -13,9 +13,14 @@ html, body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
 }
 
 /*betting table*/
+.betting-board {
+	margin-right: 40px;
+}
 
 .betting-board tr td {
 	border: 1px solid #000;
@@ -94,7 +99,6 @@ html, body{
 	height: 312px;
 	width: 312px;
 	position: relative;
-	left: -75px;
 }
 	
 .ballTrack{
@@ -476,3 +480,230 @@ html, body{
 	margin-top: -25px;
 }
 /*chip end*/
+
+.spin {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+}
+
+.spin-btn_wrapper {
+	margin-top: 30px;
+	width: 312px;
+	height: 100px;
+}
+
+.spin_btn {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: 3px solid #000;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.spin_btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.win {
+	align-self: flex-start;
+}
+
+.win_text {
+	color: #e0080b;
+	font-family: "Arial", sans-serif;
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+.clear-btn_wrapper {
+	width: 312px;
+	height: 100px;
+	padding-top: 30px;
+}
+
+.clear_btn {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: 3px solid #000;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.clear_btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.header, .footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px;
+}
+
+.footer {
+	margin-top: 145px;
+	align-items: center;
+}
+
+.left-buttons button, .right-buttons button, .footer_btn {
+	width: 175px;
+	height: 50px;
+	border-style: none;
+	cursor: pointer;
+	background-color: transparent;
+	border: 3px solid #000;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.deposit_btn {
+	margin-right: 20px;
+}
+
+.right-buttons button:first-child {
+	margin-right: 20px;
+}
+
+.left-buttons button:hover, .right-buttons button:hover, .footer_btn:hover, .money-modal_btn:hover, .text-modal_btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.money_modal {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+	text-align: center;
+}
+
+.money-modal_content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; 
+}
+
+.money-modal_text {
+	font-family: "Arial", sans-serif;
+	font-size: 25px;
+}
+
+.money-modal_input {
+	border-style: none;
+	border: 3px solid #000;
+	width: 175px;
+	height: 40px;
+}
+
+.money-modal_btn {
+	border-style: none;
+	border: 3px solid #000;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.text_modal {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+	text-align: center;
+}
+
+.text-modal_content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; 
+}
+
+.text-modal_title {
+	font-family: "Arial", sans-serif;
+	font-size: 30px;
+}
+
+.text-modal_text {
+	font-family: "Arial", sans-serif;
+	font-size: 25px;
+}
+
+.text-modal_btn {
+	border-style: none;
+	border: 3px solid #000;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.icon_text {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.text {
+	width: 199px;
+	height: 300px;
+	display: none;
+}
+
+.text_title {
+	font-family: "Arial", sans-serif;
+	font-size: 25px;
+}
+
+.footer-button .text_title {
+	display: none;
+	margin: 5px 0;
+}
+
+.text-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.text-block {
+	width: 39px;
+	height: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 10px 5px;
+}
+
+.text-block p {
+	display: block;
+	margin: 0;
+}
