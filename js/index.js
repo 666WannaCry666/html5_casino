@@ -92,16 +92,15 @@ function removeChips(){
 	}
 }
 
-const createText = function(json) {
-	let text = "";
-	
-	json.forEach(obj => {
-		let textBlock = `<div class="text-block"><p>${obj.text}</p></div>`
-		text = text + textBlock;
-	});
+const clear = function() {
+	bet = new Object();
+	document.querySelectorAll(".chip").forEach(node => {
+		node.remove();
+	})
 
-	document.querySelector(".text").style.display = "block";
-	document.querySelector(".text-wrapper").innerHTML = text;
+	document.querySelectorAll(`.betting-board_line-row .vertical`).forEach(node => {
+		node.style.cssText = "transform: rotate(-90deg);"
+	});
 };
 
 window.onload = function() {
@@ -109,15 +108,13 @@ window.onload = function() {
 	setEventListeners(document.querySelectorAll(".betting-board_line-nums"));
 	setEventListenersRow(document.querySelectorAll(".betting-board_line-row"));
 	
-	document.querySelector(".clear_btn").addEventListener("click", function() {
-		bet = new Object();
-		document.querySelectorAll(".chip").forEach(node => {
-			node.remove();
-		})
-	});
+	document.querySelector(".clear_btn").addEventListener("click", clear);
 
 	document.querySelector(".spin_btn").addEventListener("click", async function() {
-		document.querySelector(".win_text").innerText = "";
+		this.disabled = true;
+		document.querySelector(".clear_btn").disabled = true;
+
+		document.querySelector(".win").style.visibility = "hidden";
 
 		wheel.style.cssText = 'animation: wheelRotate 5s linear infinite;';
 		ballTrack.style.cssText = 'animation: ballRotate 1s linear infinite;';
@@ -127,57 +124,10 @@ window.onload = function() {
 		spinWheel(winOrLose.value);
 
 		setTimeout(() => {
+			document.querySelector(".win").style.visibility = "visible";
 			document.querySelector(".win_text").innerText = winOrLose.text;
+			this.disabled = false;
+			document.querySelector(".clear_btn").disabled = false;
 		}, 11000);
-		setTimeout(() => {
-			removeChips();
-		}, 10000);
-	});
-
-	document.querySelector(".footer_btn").addEventListener("click", async function() {
-		let response = await fetch("./text.json");
-		let jsonText = await response.json();
-
-		const text_1 = "TEXT1";
-		const text_2 = "TEXT2";
-		const textTitleClone = document.querySelector(".text_title").cloneNode();
-
-		createText(jsonText);
-		document.querySelector(".text_title").innerHTML = text_1;
-
-		this.style.display = "none";
-
-		document.querySelector(".footer-button .text_title:first-of-type").innerHTML = text_1;
-		document.querySelector(".footer-button .text_title:last-of-type").innerHTML = text_2;
-		document.querySelector(".footer-button .text_title:first-of-type").style.display = "block";
-		document.querySelector(".footer-button .text_title:last-of-type").style.display = "block";
-	});
-
-	const moneyModalNode = document.querySelector("#money_modal");
-	const depositBtnNode = document.querySelector(".deposit_btn");
-	const withdrawBtnNode = document.querySelector(".withdraw_btn");
-	const textModalNode = document.querySelector("#text_modal")
-
-	depositBtnNode.onclick = function() {
-	  moneyModalNode.style.display = "block";
-	}
-
-	withdrawBtnNode.onclick = function() {
-		moneyModalNode.style.display = "block";
-	  }
-
-	window.onclick = function(event) {
-	  if (event.target == moneyModalNode) {
-	    moneyModalNode.style.display = "none";
-	  }
-	  else if (event.target == textModalNode) {
-		textModalNode.style.display = "none";
-	  }
-	}
-
-	document.querySelectorAll(".right_btn").forEach(node => {
-		node.addEventListener("click", () => {
-			textModalNode.style.display = "block";
-		});
 	});
 };

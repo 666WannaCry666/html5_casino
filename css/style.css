@@ -14,7 +14,7 @@ html, body{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 /*betting table*/
@@ -65,11 +65,11 @@ html, body{
 
 #cell_1-to-18, #cell_19-to-36 {
 	width: 250px;
-	height: 50px;
+	height: 61px;
 }
 
 .betting-board_row-5 td, .betting-board_row-6 td {
-	height: 40px;
+	height: 61px;
 }
 
 .table-hidden {
@@ -490,7 +490,7 @@ html, body{
 .spin-btn_wrapper {
 	margin-top: 30px;
 	width: 312px;
-	height: 100px;
+	height: 75px;
 }
 
 .spin_btn {
@@ -517,6 +517,7 @@ html, body{
 
 .win {
 	align-self: flex-start;
+	visibility: hidden;
 }
 
 .win_text {
@@ -528,8 +529,8 @@ html, body{
 
 .clear-btn_wrapper {
 	width: 312px;
-	height: 100px;
-	padding-top: 30px;
+	height: 75px;
+	padding-top: 20px;
 }
 
 .clear_btn {
@@ -555,7 +556,7 @@ html, body{
 }
 
 .footer {
-	margin-top: 145px;
+	margin-top: 90px;
 	align-items: center;
 }
 
@@ -594,15 +595,16 @@ html, body{
 	overflow: auto; 
 	background-color: rgb(0,0,0); 
 	background-color: rgba(0,0,0,0.4); 
-	text-align: center;
 }
 
-.money-modal_content {
+.money-modal_content-deposit, .money-modal_content-withdraw {
 	background-color: #fefefe;
 	margin: 15% auto; 
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%; 
+	width: 30%; 
+	display: flex;
+	flex-direction: column;
 }
 
 .money-modal_text {
@@ -624,6 +626,7 @@ html, body{
 	height: 40px;
 	cursor: pointer;
 	background-color: transparent;
+	align-self: flex-end;
 }
 
 .text_modal {
@@ -640,7 +643,7 @@ html, body{
 	text-align: center;
 }
 
-.text-modal_content {
+.text-modal_content-1, .text-modal_content-2 {
 	background-color: #fefefe;
 	margin: 15% auto; 
 	padding: 20px;
@@ -676,7 +679,7 @@ html, body{
 .text {
 	width: 199px;
 	height: 300px;
-	display: none;
+	visibility: hidden;
 }
 
 .text_title {
